@@ -15,18 +15,18 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.8" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.8" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
     <PackageReference Include="Polly" Version="7.2.1" />
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="85.0.4183.8700" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="88.0.4324.9600" />
     <PackageReference Include="Selenium.WebDriver.MicrosoftDriver" Version="17.17134.0" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.6.6" />
     <PackageReference Include="SpecRun.SpecFlow" Version="3.6.2" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.8" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.8" />
-    <PackageReference Include="Moq" Version="4.14.6" />
+    <PackageReference Include="Moq" Version="4.16.0" />
 
   </ItemGroup>
 
