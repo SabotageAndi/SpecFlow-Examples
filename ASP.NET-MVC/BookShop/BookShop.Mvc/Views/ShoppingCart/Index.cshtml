@@ -4,6 +4,7 @@
 @using Microsoft.AspNetCore.Routing
 @using Microsoft.EntityFrameworkCore.Internal
 @using Microsoft.Extensions.Configuration.CommandLine
+@using System.Globalization
 
 @model ShoppingCart
 
@@ -40,7 +41,7 @@
                         <button type="submit" class="btn btn-success">&#10003;</button>
                     }
                 </td>
-                <td class="price">&euro; @orderLine.Price.ToString("0.00")</td>
+                <td class="price">&euro; @orderLine.Price.ToString("0.00", CultureInfo.CurrentUICulture)</td>
                 <td>
                     @Html.ActionLink("X", "DeleteItem", "ShoppingCart", new { id = orderLine.Book.Id }, new { @class = "btn btn-danger" })
                 </td>
@@ -52,7 +53,7 @@
             <th><h4><strong>Total</strong></h4></th>
             <th></th>
             <th class="shoppingcart_count">@Model.Count</th>
-            <th class="shoppingcart_total_amount">&euro; @Model.Price.ToString("0.00")</th>
+            <th class="shoppingcart_total_amount">&euro; @Model.Price.ToString("0.00",CultureInfo.CurrentUICulture)</th>
         </tr>
         </tfoot>
     </table>

@@ -1,4 +1,5 @@
 ﻿@using BookShop.Mvc.Models
+@using System.Globalization
 
 @model Book
 
@@ -17,7 +18,7 @@
     <dd id="author">@Model.Author</dd>
 
     <dt>Price</dt>
-    <dd id="price">&euro; @Model.Price.ToString("0.00")</dd>
+    <dd id="price">&euro; @Model.Price.ToString("0.00", CultureInfo.CurrentUICulture)</dd>
 
     <dt>Id</dt>
     <dd id="id">@Model.Id</dd>

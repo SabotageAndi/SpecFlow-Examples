@@ -50,7 +50,8 @@ namespace BookShop.AcceptanceTests.Drivers.Selenium
 
             if (expectedBook.Price != null)
             {
-                var actualPrice = decimal.Parse(bookDetailPageObject.Price[2..], CultureInfo.CurrentUICulture);
+                var priceNumber = bookDetailPageObject.Price[2..];
+                var actualPrice = decimal.Parse(priceNumber, CultureInfo.CurrentUICulture);
                 var expectedPrice = Convert.ToDecimal(expectedBook.Price);
                 actualPrice.Should().Be(expectedPrice);
             }
