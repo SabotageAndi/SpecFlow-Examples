@@ -66,7 +66,7 @@ namespace BookShop.AcceptanceTests.Drivers.Selenium
                 chromeOptions.AddArgument("headless");
             }
 
-            var chromeDriver = new ChromeDriver(chromeOptions: chromeOptions)
+            var chromeDriver = new ChromeDriver(chromeOptions: chromeOptions, projectName:"Webinar February 2021", jobName:"BookShop Acceptance Tests")
             {
                 Url = _webServerDriver.Hostname
             };
